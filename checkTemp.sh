@@ -1,11 +1,11 @@
 #!/bin/bash
-# checkTemp
-# check Tokyo Temp
-# mao上に置き,東京の気温データをログする
+# checkTemp # check Tokyo Temp
+# 東京の気温データをログする
 # 2019-01-09 13:07
+#
 TMP="/tmp/TokyoTempHumd"
 Amedas_url="http://www.jma.go.jp/jp/amedas_h/today-44132.html?groupCode=30&areaCode=000"
-Log_file="/home/yukio/TokyoTemp/log"
+Log_file="/home/log"
 getTmpTime() {
 	TS="`stat -c %y ${TMP}`"
 	expr  ${TS:11:2}
